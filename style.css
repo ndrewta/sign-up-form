@@ -86,7 +86,7 @@ body {
     margin-top: -20px;
 }
 
-.form-wrapper {
+.form {
     height: 100%;
     width: 100%;
     padding-bottom: 5px;
@@ -97,7 +97,7 @@ body {
     font-weight:
 }
 
-.form-wrapper p {
+.form p {
     padding-top: 0;
     padding-left: 25px;
     margin-top: 15px;
@@ -131,7 +131,10 @@ input:focus {
 
 input:invalid {
     border-color: red;
-    
+}
+
+.error {
+    border-color: red;
 }
 
 .login-wrapper {
