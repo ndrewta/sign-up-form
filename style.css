@@ -4,13 +4,10 @@
 }
 
 body {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
-    padding: 100px;
-    margin: 0;
-    height: 80vh;
-    width: 80vw;
     
 }
 
@@ -25,11 +22,11 @@ body {
 .left-container img {
     margin: 0;
     padding: 0;
-    max-height: 100%;
+    height: 100%;
     width: 100%;
 }
 
-.left-container #logo-wrapper {
+#logo-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,13 +37,13 @@ body {
     background-color: 	rgba(0, 0, 0, 0.5);
 }
 
-.left-container #logo-wrapper img {
+#logo-wrapper img {
     max-height: 90%;
     width: auto;
     align-self: center;
 }
 
-.left-container #logo-wrapper p {
+#logo-wrapper p {
     font-size: 100px;
     color: white;
     font-family: "Norse Bold", Arial, Helvetica, sans-serif;
@@ -66,7 +63,7 @@ body {
     width: 30vw;
     height: 100%;
     padding: 0;
-    background-color: rgb(25, 221, 7);
+    background-color: rgba(245, 245, 245, 0.719);
 }
 
 .right-container p {
@@ -94,15 +91,17 @@ body {
     width: 100%;
     padding-bottom: 5px;
     margin-bottom: 20px;
-    background-color: rgb(59, 189, 206);
+    background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    font-weight:
 }
 
 .form-wrapper p {
     padding-top: 0;
     padding-left: 25px;
     margin-top: 15px;
+    font-weight: bold;
 }
 
 form div {
@@ -114,13 +113,33 @@ form div {
 input,
 label {
     display: block;
-    margin: 5px;
+    margin: 10px;
+}
+
+input {
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(73, 70, 70);
+    padding: 3px;
+    border-color: rgba(226, 220, 220, 0.678);
+    border-width: 2px;
+}
+
+input:focus {
+    border-color: rgb(43, 111, 212);
+    outline: none;
+}
+
+input:invalid {
+    border-color: red;
+    
 }
 
 .login-wrapper {
     height: 80%;
     width: auto;
     padding-left: 25px;
+    padding-top: 25px;
+    margin-bottom: -40px;
 }
 
 .login-wrapper p {
@@ -129,7 +148,28 @@ label {
 }
 
 button {
-    width: 150px;
-    height: 30px;
-    background-color: #E5E7EB;
+    width: 170px;
+    height: 45px;
+    background-color: #596D48;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #6c8556;
+}
+
+button:active {
+    background-color: #58664a;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
 }
