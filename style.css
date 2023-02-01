@@ -76,6 +76,7 @@ body {
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .hero #top-text {
@@ -113,7 +114,10 @@ form div {
 input,
 label {
     display: block;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 input {
@@ -137,7 +141,7 @@ input:invalid {
     border-color: red;
 }
 
-.login-wrapper {
+.login-block {
     height: 80%;
     width: auto;
     padding-left: 25px;
@@ -145,7 +149,7 @@ input:invalid {
     margin-bottom: -40px;
 }
 
-.login-wrapper p {
+.login-block p {
     padding-top: 5px;
     padding-left: 0;
 }
@@ -175,4 +179,20 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: #596D48;
+}
+
+.error::after {
+    content: "* Passwords don't match!";
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.error-empty::after {
+    content: "* Password field can't be empty!";
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
 }
