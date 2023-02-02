@@ -8,7 +8,12 @@ body {
     grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
-    
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
 }
 
 .left-container {
@@ -90,17 +95,14 @@ body {
 .form {
     height: 100%;
     width: 100%;
-    padding-bottom: 5px;
     margin-bottom: 20px;
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    font-weight:
 }
 
 .form p {
-    padding-top: 0;
-    padding-left: 25px;
+    margin-left: 10px;
     margin-top: 15px;
     font-weight: bold;
 }
@@ -137,16 +139,11 @@ input:invalid {
     border-color: red;
 }
 
-.error {
-    border-color: red;
-}
-
 .login-block {
-    height: 80%;
+    height: 100%;
     width: auto;
-    padding-left: 25px;
-    padding-top: 25px;
-    margin-bottom: -40px;
+    margin-left: 25px;
+    padding-left: 10px;
 }
 
 .login-block p {
@@ -175,13 +172,11 @@ button:active {
     background-color: #58664a;
 }
 
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #596D48;
+.error {
+    border-color: red;
 }
 
-.error::after {
+.error-pass::after {
     content: "* Passwords don't match!";
     color: red;
     font-weight: bold;
@@ -189,8 +184,8 @@ a {
     margin-left: 10px;
 }
 
-.error-empty::after {
-    content: "* Password field can't be empty!";
+.error-tel::after {
+    content: "* Numbers only!";
     color: red;
     font-weight: bold;
     font-size: 12px;
